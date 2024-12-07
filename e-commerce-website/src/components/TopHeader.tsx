@@ -11,6 +11,7 @@ const poppins = Poppins({
 
 const TopHeader = () => {
   return (
+    <div className="bg-black">
     <div className="w-full h-[48px] bg-black py-[12px]">
       <div className="w-[859px] h-[24px] ml-[445px]">
         <div
@@ -26,6 +27,7 @@ const TopHeader = () => {
 
         <div className="w-[78px] h-[24px]"></div>
       </div>
+    </div>
     </div>
   );
 };

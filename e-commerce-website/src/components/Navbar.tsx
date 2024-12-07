@@ -5,6 +5,7 @@ import { PiShoppingCartLight } from "react-icons/pi";
 
 const Navbar = () => {
   return (
+    <div className="container">
     <div className="w-[1100px] h-[38px] ml-[130px] mt-[50px] flex justify-between">
       <div className="w-[640px] h-[24px] mt-[5px] flex justify-between">
         {/* logo */}
@@ -12,7 +13,7 @@ const Navbar = () => {
           Exclusive
         </div>
 
-        <div className="w-[367px] h-[24px] leading-[24px] font-[400]">
+        <div className="w-[367px] h-[24px] leading-[24px] font-[400] md:block hidden">
           <ul className="flex gap-[48px] cursor-pointer">
             <li>Home</li>
             <li>About</li>
@@ -29,7 +30,7 @@ const Navbar = () => {
             placeholder="What are you looking for?"
             className="w-full h-full pr-10 pl-4 text-black focus:outline-none border-none bg-[#f5f5f5]"
           />
-          <CiSearch className="absolute top-1/2 right-3 transform -translate-y-1/2 text-gray-500" />
+          <CiSearch className="cursor-pointer absolute top-1/2 right-3 transform -translate-y-1/2 text-gray-500" />
         </div>
 {/* Cart & Fav */}
         <div className="w-[80px] h-[32px] gap-[16px] mt-[3px] flex items-center justify-between">
@@ -37,6 +38,7 @@ const Navbar = () => {
         <PiShoppingCartLight size={32}/>
         </div>
       </div>
+    </div>
     </div>
   );
 };

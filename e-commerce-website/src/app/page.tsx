@@ -1,6 +1,6 @@
 import Navbar from "@/components/Navbar";
 import TopHeader from "../components/TopHeader";
-import Image from "next/image";
+import Footer from "@/components/Footer";
 
 
 export default function Home() {
@@ -11,7 +11,11 @@ export default function Home() {
 
     {/* Navbar */}
     <Navbar/>
-    
+<div className="w-full h-[200px] bg-purple-300">
+
+</div>
+    {/* Footer */}
+    <Footer/>
   </div>
   );
 }
