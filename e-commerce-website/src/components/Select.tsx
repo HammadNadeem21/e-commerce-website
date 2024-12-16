@@ -13,7 +13,7 @@ import {
 export function SelectDemo(props:{name:string}) {
   return (
     <Select>
-      <SelectTrigger className="w-[130px]">
+      <SelectTrigger className="sm:w-[130px] w-[90px]">
         <SelectValue placeholder={props.name} className="text-[16px]"/>
       </SelectTrigger>
       <SelectContent>

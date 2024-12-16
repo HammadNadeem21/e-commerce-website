@@ -16,7 +16,8 @@ const Products = () => {
   return (
     <div>
       {/* Products (Start) */}
-        <div className='w-full grid grid-cols-4 px-10 py-5 gap-4'>
+        <div className='w-full grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2
+        grid-cols-1 px-10 py-5 gap-4'>
             {/* product 1 */}
           <div className='h-[400px]'>
             <Image src={product1} alt='Product 1' className='h-[330px] w-full'/>

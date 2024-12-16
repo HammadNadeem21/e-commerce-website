@@ -19,7 +19,7 @@ const ProductList = () => {
         {/* Top BG (End) */}
 
         {/* Filters (Start) */}
-<div className='w-full h-[64px] grid grid-cols-2 gap-2 py-3 px-5'>
+<div className='w-full h-[64px] grid sm:grid-cols-2 grid-cols-1 gap-2 py-3 px-5'>
 
 <div className='flex'>
   <SelectDemo name='Category'/>
@@ -28,7 +28,7 @@ const ProductList = () => {
   <SelectDemo name='Brand'/>
   </div>
 
-  <div className='flex gap-5 justify-end'>
+  <div className='flex gap-5 sm:justify-end justify-start sm:ml-0 ml-[12px]'>
     <h1 className='mt-2'>Sorting by:</h1>
   <SelectDemo name='Brand'/>
 
@@ -40,7 +40,9 @@ const ProductList = () => {
 
 
         {/* Products (Start) */}
+        <div className='sm:mt-0 mt-8'>
         <Products/>
+        </div>
         {/* Products (End) */}
 
 
